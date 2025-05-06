@@ -1,64 +1,108 @@
 <!DOCTYPE html>
-<html lang="=en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="=viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Modern Login Page | CM Choong</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choong Cheng Meng - Portfolio</title>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <script defer src="static/js/main.js"></script>
 </head>
-
 <body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#home">
+            <img id="siteLogo" src="static/images/CM97_Geometric_Logo (Edit).png" alt="Logo">
+          </a>
+        </div>
+        <div class="nav-toggle">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" aria-label="Toggle Light and Dark Theme">Switch</button>
+      </div>
+    </nav>
+  </header>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site feature</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site feature</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
-        </div>
+
+
+<section id="home">
+  <div class="container" style="text-align: center;">
+    <img src="static/images/1706507069534.jpg" alt="My Photo" class="profile-photo">
+    <h1>Hi, I'm Choong Cheng Meng</h1>
+    <p>Although I do not hold a formal diploma in IT, I possess practical experience in the IT sector.
+        <br>I also possess practical experience in MS Office, such as <strong>Excel <em>(Macros/VBA)</em></strong>, <strong>Word</strong> and <strong>PowerPoint</strong>.</p>
+    <p>A passionate developer and creative problem solver.</p>
+  </div>
+</section>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I transitioned from the food and beverage industry into the technology world, specializing in front-end development, data science, and Unity 3D game creation.</p>
+</section>
+
+<section id="projects" class="container">
+    <h2>Projects</h2>
+    <div id="project-list">Loading projects...</div>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Programming Languages:</b> C#, Python, VBA, JavaScript</li>
+      <li><b>Tools:</b> Unity 3D, Excel Automation, AI Model Development, 3D Modeling, Rigging, VFX</li>
+      <li><b>Soft Skills:</b> Independent Learning, Problem Solving, Cross-domain Thinking</li>
+    </ul>
+</section>
+
+<section id="certificates">
+  <div class="container">
+    <h2>Certificates & Qualifications</h2>
+    <div class="project-card">
+      <h3>International Diploma of Business</h3>
+      <p>Issued by Camford International College – Credential ID: 200002539Z</p>
+      <a href="static/folder/172418 Digital Certificate Diploma Business Administration Management.pdf" class="btn" target="_blank">View Certificate</a>
+      <a href="https://www.facebook.com/Camfordsg/" class="btn" target="_blank">College Official Page</a>
     </div>
+    <div class="project-card">
+      <h3>Indie Game Development</h3>
+      <p>Issued by MAGES Institute of Excellence - Certificate No: SC207-2024027</p>
+      <a href="static/folder/Indie Game Development - Choong Cheng Meng_Education.pdf" class="btn" target="_blank">View Certificate</a>
+      <a href="https://dashboard.accredify.io/verify?id=c05ad637-2eb6-4059-a9e2-580ac874a596" class="btn" target="_blank">Authority Digital Verify</a>
+      <a href="https://mages.edu.sg/" class="btn" target="_blank">Institute Website</a>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js">  </script>
+<section id="contact" class="container">
+  <h2>Contact Me</h2>
+  <a href="https://wa.me/60143394001?text=Hello, we have some interest in your profile. We want to know more about you, thank you~" target="_blank" class="whatsapp-btn">
+    <img src="static/images/whatsapp.png" alt="WhatsApp" style="width: 135px; height: 35px;">
+  </a>
+  <p>Email: <a href="mailto:choongchengmeng@gmail.com?subject=Interested in your portfolio&body=Hi Cheng Meng, I visited your website and...">choongchengmeng@gmail.com</a></p>
+  <div style="text-align: center; margin-top: 20px;">
+    <h3>Social Media</h3>
+    <div style="display: inline-block;">
+      <a href="https://www.facebook.com/GamerofCMChoong/" target="_blank"><img src="static/folder/Logo.gif" width="30" height="30"></a>
+      <a href="https://www.instagram.com/chengmeng.choong" target="_blank"><img src="static/folder/instagram-alt.svg" width="30" height="30"></a>
+      <a href="https://www.linkedin.com/in/choong-cheng-meng-650442285" target="_blank"><img src="static/folder/linkedin.svg" width="30" height="30"></a>
+      <a href="https://github.com/CMCHOONG97" target="_blank"><img src="static/folder/github.svg" width="30" height="30"></a>
+      <a href="https://www.artstation.com/choongmeng" target="_blank"><img src="static/images/artstation-line.svg" width="25" height="25"></a>
+      <a href="https://www.youtube.com/channel/UCF_fYTbi9GbJ0UVG-kfwoRQ" target="_blank"><img src="static/images/youtube.svg" width="30" height="30"></a>
+    </div>
+  </div>
+</section>
+
+<!-- <button id="themeToggle" aria-label="Toggle Light and Dark Theme">Toggle Theme</button> -->
+
+<footer>
+  <p>© 2025 Choong Cheng Meng. Built with passion and coffee.</p>
+</footer>
+
 </body>
-
 </html>
